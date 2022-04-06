@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 .App {
   display: grid;
@@ -7,7 +7,7 @@
   grid-template-areas: 'header header' 'navbar content';
   grid-template-columns: 2fr 10fr; 
   grid-template-rows: 60px 1fr;
-  gap: 10px;
+  gap: 11px;
 }
 
 
