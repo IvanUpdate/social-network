@@ -1,13 +1,12 @@
 .navbar {
     grid-area: navbar;
-    background-color: greenyellow;
+    background-color: #FFF56D;
     padding-left: 2vw;
     padding-top: 1vh;
     border-radius: 40px;
 }
 
 .item {
-    color: #ff3251;
     font-size: 30px;
     padding: 5px;
 }

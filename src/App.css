@@ -3,12 +3,17 @@
 .App {
   display: grid;
   height: 100vh;
-  width: 100vw;
+  width: calc(100% - 20px);
   grid-template-areas: 'header header' 'navbar content';
   grid-template-columns: 2fr 10fr; 
   grid-template-rows: 60px 1fr;
-  gap: 11px;
+  gap: 10px;
+  color: #5f62ff;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 
 
 

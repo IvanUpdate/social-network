@@ -1,12 +1,18 @@
-.header img {
-    width: 40px;
-    padding-left: 5vw;
-    height: 100%;
-    width: auto;
-}
 
 .header {
     grid-area: header;
-    background-color: aqua;
+    background-color: #99FFCD;
     border-radius: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.logo {
+    margin-left: 10px;
+    color: #ff3251;
 }

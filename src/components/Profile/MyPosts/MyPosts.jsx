@@ -15,8 +15,8 @@ const Button = styled.button`
   `;
 
 const AddPostButton = styled(Button)`
-    background: 
-`
+    background:  
+`;
 
 
 export const MyPosts = () => {

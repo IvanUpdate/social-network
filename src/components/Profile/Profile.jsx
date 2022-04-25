@@ -1,21 +1,39 @@
 import React from "react";
-import profileStyles from './Profile.module.css';
+import styles from './Profile.module.css';
 import {MyPosts} from "./MyPosts/MyPosts";
+import styled from "styled-components";
+import {main_image} from "../../services/constants";
+
+
+const ProfileDiv= styled.div`
+    background-color: #FFD36E;
+    border-radius: 40px;
+    margin-top: 10px;
+`;
+
+const Image = styled.img`
+    border-radius: 40px;
+    width: 100%;
+    height: 60vh;
+`;
+
+/*const result = new Date();
+const date = Date.now();
+result.setDate(date.getDate() + 50);*/
+
+
 
 
 const Profile = () => {
     return (
-        <div className={profileStyles.content}>
-            <div>
-                <img
-    src="http://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg"/>
-            </div>
-            <div>
+        <div>
+            <Image src={main_image}/>
+            <ProfileDiv>
                 ava+description
-            </div>
-            <MyPosts/>
+                <MyPosts/>
+            </ProfileDiv>
         </div>
     );
-}
+};
 
 export default Profile;
