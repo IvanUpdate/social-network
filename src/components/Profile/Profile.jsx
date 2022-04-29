@@ -17,13 +17,6 @@ const Image = styled.img`
     height: 60vh;
 `;
 
-/*const result = new Date();
-const date = Date.now();
-result.setDate(date.getDate() + 50);*/
-
-
-
-
 const Profile = () => {
     return (
         <div>
