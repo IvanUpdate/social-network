@@ -2,16 +2,17 @@
 
 .App {
   display: grid;
-  height: 100vh;
-  width: calc(100% - 20px);
+  margin: 5px;
+  /*height: 100vh;
+  width: calc(100% - 20px);*/
   grid-template-areas: 'header header' 'navbar content';
-  grid-template-columns: 2fr 10fr; 
+  grid-template-columns: 2fr 10fr;
   grid-template-rows: 60px 1fr;
   gap: 10px;
   color: #5f62ff;
-  margin-top: 10px;
+  /*margin-top: 10px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 10px;*/
 }
 
 
