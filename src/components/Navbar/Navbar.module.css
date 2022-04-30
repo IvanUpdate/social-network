@@ -4,9 +4,22 @@
     padding-left: 2vw;
     padding-top: 1vh;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar .item, .navbar .item_active {
+    padding: 5px;
+    text-decoration: none;
 }
 
 .item {
-    font-size: 30px;
-    padding: 5px;
+    color: #5f62ff;
+}
+
+.item_active {
+    color: #040667;
 }

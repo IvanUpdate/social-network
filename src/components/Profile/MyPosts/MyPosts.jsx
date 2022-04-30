@@ -24,7 +24,7 @@ export const MyPosts = () => {
 
 
     return (
-    <div>
+    <div className={styles.post_area}>
         My Posts
         <div>
             New Post

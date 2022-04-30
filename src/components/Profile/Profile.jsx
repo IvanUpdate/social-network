@@ -19,7 +19,7 @@ const Image = styled.img`
 
 const Profile = () => {
     return (
-        <div>
+        <div className={styles.main}>
             <Image src={main_image}/>
             <ProfileDiv>
                 ava+description

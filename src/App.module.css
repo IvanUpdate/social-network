@@ -1,0 +1,26 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');*/
+
+.app {
+  display: grid;
+  margin: 5px 40px;
+  grid-template-areas: 'header header' 'navbar content';
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 60px 1fr;
+  gap: 10px;
+  color: #5f62ff;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  min-height: calc(100% - 75px);
+}
+
+
+
+
+
+
+
+
+
