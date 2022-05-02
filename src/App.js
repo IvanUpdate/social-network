@@ -17,7 +17,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Profile />} />
                     <Route path="/about" element={"About"} />
-                    <Route path="/dialogs" element={<Dialogs />} />
+                    <Route path="/dialogs" element={<Dialogs />} exact={true}/>
                 </Routes>
                 </section>
             </div>
