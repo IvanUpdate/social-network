@@ -24,17 +24,6 @@
     font-size: 30px;
 }
 
-.user, .user_active {
-    padding-top: 20px;
-    display: list-item;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-.user_active {
-    color: #040667;
-}
-
 .content {
     display: flex;
     gap: 50px;
@@ -50,7 +39,4 @@
     max-width: 200px;
 }
 
-.message {
-    font-size: 15px;
-    padding-top: 20px;
-}
+

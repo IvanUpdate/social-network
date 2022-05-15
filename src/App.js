@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import {Dialogs} from "./components/Dialogs/Dialogs";
 
 
-const App = () => {
+const App = (props) => {
     return (
         <Router>
             <div className={styles.app}>
@@ -15,9 +15,9 @@ const App = () => {
                 <Navbar/>
                 <section className={styles.content}>
                 <Routes>
-                    <Route path="/" element={<Profile />} />
+                    <Route path="/" element={<Profile posts={props.posts}/>} />
                     <Route path="/about" element={"About"} />
-                    <Route path="/dialogs" element={<Dialogs />} exact={true}/>
+                    <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} messages={props.messages}/>} exact={true}/>
                 </Routes>
                 </section>
             </div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './MyPosts.module.css';
 import {Post} from "./Post/Post";
 import {Textarea} from "../../ui/Textarea/Textarea";
@@ -15,28 +15,21 @@ const Button = styled.button`
   margin: 10px;
   `;
 
-// const AddPostButton = styled(Button)`
-//     background:
-// `;
 
-
-export const MyPosts = () => {
-
+export const MyPosts = ({posts}) => {
 
     return (
     <div className={styles.post_area}>
-        My Posts
-        <div>
-            New Post
-        </div>
+        <h3>My Posts</h3>
         <Textarea></Textarea>
         <Button>Add Post</Button>
         <Button>Remove Post</Button>
         <div>
-            <Post message = "I am dragging tags from the dropdown list to a text-area but I want the tag's text as non-editable how I can achieve this. You can see in the GIF that the text in Text-area is editable now."/>
-            <Post message = "hi"/>
-            <Post message = "how are you today?"/>
-            <Post/>
+            {posts.map(post => {
+                return(
+                    <Post key={post.id} message={post.message} likes={post.likes}/>
+                )
+            })}
         </div>
     </div>);
 };

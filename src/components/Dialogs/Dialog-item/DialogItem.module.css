@@ -1,0 +1,10 @@
+.user, .user_active {
+    padding-top: 20px;
+    display: list-item;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.user_active {
+    color: #040667;
+}

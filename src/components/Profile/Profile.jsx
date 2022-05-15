@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Profile.module.css';
 import {MyPosts} from "./MyPosts/MyPosts";
 import styled from "styled-components";
-import {main_image} from "../../services/constants";
+import {ProfileInfo} from "./Profile-info/Profile-info";
 
 
 const ProfileDiv= styled.div`
@@ -11,19 +11,13 @@ const ProfileDiv= styled.div`
     margin-top: 10px;
 `;
 
-const Image = styled.img`
-    border-radius: 40px;
-    width: 100%;
-    height: 60vh;
-`;
 
-const Profile = () => {
+const Profile = ({posts}) => {
     return (
         <div className={styles.main}>
-            <Image src={main_image}/>
+            <ProfileInfo />
             <ProfileDiv>
-                ava+description
-                <MyPosts/>
+                <MyPosts posts={posts}/>
             </ProfileDiv>
         </div>
     );
