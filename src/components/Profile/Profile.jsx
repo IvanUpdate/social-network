@@ -12,12 +12,12 @@ const ProfileDiv= styled.div`
 `;
 
 
-const Profile = ({posts}) => {
+const Profile = ({state}) => {
     return (
         <div className={styles.main}>
             <ProfileInfo />
             <ProfileDiv>
-                <MyPosts posts={posts}/>
+                <MyPosts posts={state.posts}/>
             </ProfileDiv>
         </div>
     );

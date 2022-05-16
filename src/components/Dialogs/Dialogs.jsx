@@ -3,7 +3,9 @@ import styles from './Dialogs.module.css';
 import {DialogItem} from "./Dialog-item/Dialog-item";
 import {Message} from "./Message/Message";
 
-export const Dialogs = ({dialogs, messages}) => {
+export const Dialogs = ({state}) => {
+
+    const {dialogs, messages} = state;
 
     return (
         <main className={styles.dialogs}>
