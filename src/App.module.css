@@ -2,9 +2,9 @@
 
 .app {
   display: grid;
-  margin: 5px 40px;
+  margin: 5px 150px;
   grid-template-areas: 'header header' 'navbar content';
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 3fr 10fr;
   grid-template-rows: 60px 1fr;
   gap: 10px;
   color: #5f62ff;

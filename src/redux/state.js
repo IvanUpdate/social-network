@@ -1,3 +1,5 @@
+import {avatar_image} from "../services/constants";
+
 export let state = {
     profilePage: {
         posts: [
@@ -7,7 +9,7 @@ export let state = {
                 message: "I am dragging tags from the dropdown list to a text-area but I want the tag's text as non-editable how I can achieve this. You can see in the GIF that the text in Text-area is editable now."
             },
             {id: 2, likes: 35, message: "hi"},
-            {id: 2, likes: 0, message: "how are you today?"},
+            {id: 3, likes: 0, message: "how are you today?"},
         ],
     },
 
@@ -20,12 +22,12 @@ export let state = {
             {id: 5, message: "Enjoy"},
         ],
         dialogs: [
-            {id: 1, name: "Ivan"},
-            {id: 2, name: "Ilya"},
-            {id: 3, name: "Timofey"},
-            {id: 4, name: "Inna"},
-            {id: 5, name: "Anna"},
-            {id: 6, name: "Marta"}
+            {id: 1, name: "Ivan", image: avatar_image},
+            {id: 2, name: "Ilya", image: avatar_image},
+            {id: 3, name: "Timofey", image: avatar_image},
+            {id: 4, name: "Inna", image: avatar_image},
+            {id: 5, name: "Anna", image: avatar_image},
+            {id: 6, name: "Marta", image: avatar_image}
         ],
     }
 

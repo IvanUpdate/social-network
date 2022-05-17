@@ -12,7 +12,7 @@ const App = ({state}) => {
         <Router>
             <div className={styles.app}>
                 <Header/>
-                <Navbar/>
+                <Navbar friends={state.dialogsPage.dialogs}/>
                 <section className={styles.content}>
                 <Routes>
                     <Route path="/" element={<Profile state={state.profilePage}/>} />

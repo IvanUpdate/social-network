@@ -1,29 +1,23 @@
 import React from 'react';
 import styles from './MyPosts.module.css';
 import {Post} from "./Post/Post";
-import {Textarea} from "../../ui/Textarea/Textarea";
-import styled from 'styled-components';
-
-const Button = styled.button`
-  background: palevioletred;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-family: 'Heebo', sans-serif;
-  font-size: 20px;
-  padding: 5px 10px;
-  margin: 10px;
-  `;
+import {Inputarea} from "../../ui/ui-kit/Inputarea";
+import {Button} from "../../ui/ui-kit/Button";
 
 
 export const MyPosts = ({posts}) => {
 
+    let newPostElement = React.createRef();
+
+    const addPost = () => {
+        let text = newPostElement.current.value;
+    };
+
     return (
     <div className={styles.post_area}>
         <h3>My Posts</h3>
-        <Textarea></Textarea>
-        <Button>Add Post</Button>
-        <Button>Remove Post</Button>
+        <Inputarea ref={newPostElement}></Inputarea>
+        <Button onClick={addPost} text="Add Post" size={140}/>
         <div>
             {posts.map(post => {
                 return(

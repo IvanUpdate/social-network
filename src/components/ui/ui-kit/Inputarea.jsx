@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Textarea = () => {
+export const Inputarea = () => {
 
-    const StyledArea = styled.textarea`
+    const StyledArea = styled.input`
       background-color: #99FFCD;
       border-radius: 40px;
       border: none;
@@ -14,9 +14,10 @@ export const Textarea = () => {
       width: 30em;
       margin-left: 10px;
       min-height: 7em;
+      margin-top: 20px;
     `
 
     return (
-        <StyledArea></StyledArea>
+        <StyledArea type="text"></StyledArea>
     );
 }
