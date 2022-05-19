@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {colors} from "../../ui/Colors/colors";
 
-export const Button = ({text, size}) => {
+export const Button = ({text, size, onClick}) => {
 
     const Button = styled.button`
       background: ${colors.seaLazur};
@@ -18,6 +18,6 @@ export const Button = ({text, size}) => {
     `;
 
     return (
-        <Button type="text">{text}</Button>
+        <Button type="text" onClick={onClick}>{text}</Button>
     );
 }

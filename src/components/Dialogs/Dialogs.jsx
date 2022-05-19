@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Dialogs.module.css';
 import {DialogItem} from "./Dialog-item/Dialog-item";
 import {Message} from "./Message/Message";
-import {Inputarea} from "../ui/ui-kit/Inputarea";
+import {StyledArea} from "../ui/ui-kit/Inputarea";
 import {Button} from "../ui/ui-kit/Button";
 
 export const Dialogs = ({state}) => {
@@ -32,7 +32,7 @@ export const Dialogs = ({state}) => {
                             <Message message={message.message} key={message.id} />
                         )
                     })}
-                    <Inputarea ref={newPostElement}></Inputarea>
+                    <StyledArea ref={newPostElement}></StyledArea>
                     <Button onClick={addPost} text="Add Message" size={160}/>
                 </section>
             </div>

@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './MyPosts.module.css';
 import {Post} from "./Post/Post";
-import {Inputarea} from "../../ui/ui-kit/Inputarea";
+import {StyledArea} from "../../ui/ui-kit/Inputarea";
 import {Button} from "../../ui/ui-kit/Button";
 
 
-export const MyPosts = ({posts}) => {
+export const MyPosts = ({posts, addPost}) => {
 
-    let newPostElement = React.createRef();
+    const [post, setPost] = useState("");
 
-    const addPost = () => {
-        let text = newPostElement.current.value;
+    const clickButton = (text) => {
+        addPost(text);
+        setPost("");
     };
+
+    const onChangeValue = (e) => {
+        setPost(e.target.value);
+    }
 
     return (
     <div className={styles.post_area}>
         <h3>My Posts</h3>
-        <Inputarea ref={newPostElement}></Inputarea>
-        <Button onClick={addPost} text="Add Post" size={140}/>
+        <StyledArea onChange={onChangeValue} value={post} ></StyledArea>
+        <Button onClick={() => clickButton(post)} text="Add Post" size={140}/>
         <div>
             {posts.map(post => {
                 return(
