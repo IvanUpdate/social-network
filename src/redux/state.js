@@ -1,5 +1,4 @@
 import {avatar_image} from "../services/constants";
-import {rerenderEntireTree} from "../render";
 
 export let state = {
     profilePage: {
@@ -33,7 +32,11 @@ export let state = {
     }
 }
 
-export let addPost = (postMessage) => {
+let rerenderEntireTree = (state) => {
+
+}
+
+export const addPost = (postMessage) => {
     let newPost = {
         id: 5,
         message: postMessage,
@@ -41,4 +44,8 @@ export let addPost = (postMessage) => {
     };
     state.profilePage.posts.push(newPost);
     rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 }
