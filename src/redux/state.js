@@ -1,6 +1,5 @@
 import {avatar_image} from "../services/constants";
 
-
 export let store = {
     _state: {
         profilePage: {
@@ -36,6 +35,18 @@ export let store = {
 
     getState() {
         return this._state
+    },
+
+    dispatch(action) {
+        if (action.type === 'ADD_POST') {
+            let newPost = {
+                id: 5,
+                message: action.message,
+                likes: 0,
+            };
+            this._state.profilePage.posts.push(newPost);
+            this._callSubscriber(this._state);
+        }
     },
 
     _callSubscriber(){
