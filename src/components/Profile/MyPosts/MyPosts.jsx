@@ -5,18 +5,23 @@ import {StyledArea} from "../../ui/ui-kit/Inputarea";
 import {Button} from "../../ui/ui-kit/Button";
 
 
-export const MyPosts = ({posts, addPost}) => {
+export const MyPosts = ({posts, dispatch}) => {
 
     const [post, setPost] = useState("");
 
     const clickButton = (text) => {
-        addPost(text);
+        dispatch({
+            type: 'ADD_POST',
+            message: text
+        });
         setPost("");
     };
 
     const onChangeValue = (e) => {
         setPost(e.target.value);
     }
+
+    // переделать согласно архитектуре FLUX
 
     return (
     <div className={styles.post_area}>

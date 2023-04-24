@@ -6,18 +6,18 @@ import {ProfileInfo} from "./Profile-info/Profile-info";
 
 
 const ProfileDiv= styled.div`
-    background-color: #FFD36E;
+    background-color: #f78104;
     border-radius: 40px;
     margin-top: 10px;
 `;
 
 
-const Profile = ({state, addPost}) => {
+const Profile = ({state, dispatch}) => {
     return (
         <div className={styles.main}>
             <ProfileInfo />
             <ProfileDiv>
-                <MyPosts posts={state.posts} addPost={addPost}/>
+                <MyPosts posts={state.posts} dispatch={dispatch}/>
             </ProfileDiv>
         </div>
     );

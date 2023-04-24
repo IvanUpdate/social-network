@@ -5,10 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #DBF3FA;
+  /*background: #DBF3FA; */
+  background-image: url(/src/services/svg/blob-scene-haikei\ \(1\).svg);
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'RenogareSoft-Regular';
+  src: url('/src/services/fonts/RenogareSoft-Regular.ttf');
+}
+
+
+/* color light #9fffd1 */
+/* color light 2 #66ecaa */
+/* color light 3 #1e8690 */
+
+
+/* react formik */
+

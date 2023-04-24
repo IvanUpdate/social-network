@@ -53,15 +53,6 @@ export let store = {
         console.log("state was changed")
     },
 
-    addPost(postMessage){
-        let newPost = {
-            id: 5,
-            message: postMessage,
-            likes: 0,
-        };
-        this._state.profilePage.posts.push(newPost);
-        this._callSubscriber(this._state);
-    },
 
     subscribe(observer){
         this._callSubscriber = observer;

@@ -1,14 +1,15 @@
 .navbar {
     grid-area: navbar;
-    background-color: #FFF56D;
     padding-left: 2vw;
     padding-top: 1vh;
     border-radius: 40px;
+    border: 2px solid #18b369;
     display: flex;
     flex-direction: column;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    min-width: 80px;
 }
 
 .navbar .item, .navbar .item_active {
@@ -17,11 +18,12 @@
 }
 
 .item {
-    color: #5f62ff;
+    color: #17323e
 }
 
 .item_active {
     color: #040667;
+    font-size: 34px;
 }
 
 .image {
@@ -30,3 +32,19 @@
     border-radius: 50%;
     margin: 5px;
 }
+
+@media (max-width: 1200px) {
+    .item span:last-child, .item_active span:last-child {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    .icon {
+        display: none;
+    }
+    .navbar {
+        min-width: 200px;
+    }
+}
+
