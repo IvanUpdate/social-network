@@ -5,7 +5,8 @@ import "boxicons";
 
 const Navbar = ({ friends }) => {
   return (
-    <nav className={styles.navbar}>
+    <nav className="pl-4 pt-2 border-solid rounded-[40px] border-green border-2 
+    flex flex-col font-navbar font-bold text-3xl min-w-[80px]">
       <NavLink
         to={"/"}
         className={({ isActive }) =>
