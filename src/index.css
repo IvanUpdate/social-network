@@ -26,5 +26,7 @@ code {
 /* color light 3 #1e8690 */
 
 
-/* react formik */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
